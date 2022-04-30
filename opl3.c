@@ -1328,6 +1328,7 @@ void OPL3_WriteReg(opl3_chip *chip, uint16_t reg, uint8_t v)
     case 0x00:
         if (high)
         {
+          /* perror("HIGH!"); */
             switch (regm & 0x0f)
             {
             case 0x04:
