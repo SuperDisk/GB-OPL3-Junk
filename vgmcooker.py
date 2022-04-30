@@ -1,10 +1,10 @@
-with open('output.vgm', 'rb') as f:
+with open('nikku.vgm', 'rb') as f:
     vgm = bytearray(f.read())
 
 print(type(vgm))
 print(vgm[0])
 
-idx = 0xC0
+idx = 0x100
 while True:
     if idx >= len(vgm):
         break
@@ -13,17 +13,25 @@ while True:
         idx += 3
     elif cmd == 0x5F:
         idx += 3
-    elif cmd == 0x61:
-        num = round((vgm[idx+1] | (vgm[idx+2] << 8)) / 734)
-        vgm[idx+1] = num & 0x0F
-        vgm[idx+2] = (num & 0xF0) >> 8
+    elif cmd in [0x61, 0x63]:
+        if cmd == 0x63:
+            q = 882
+            vgm[idx] = 0x61
+            vgm[idx+1:0] = [0,0]
+        else:
+            q = (vgm[idx+1] | (vgm[idx+2] << 8))
+        #print('q:',q,'q/44100*1024=',(q / 44100)*1024)
+        num = round((q / 44100)*(60))
+        #print('writing',num,'=',hex(num), 'aka', hex(num & 0xFF), hex((num & 0xFF00) >> 8))
+        vgm[idx+1] = num & 0xFF
+        vgm[idx+2] = (num & 0xFF00) >> 8
         idx += 3
     elif cmd == 0x66:
         break
     else:
         print("UH OH!", hex(cmd))
 
-with open('cooked.vgm', 'wb') as f:
+with open('cooked2.vgm', 'wb') as f:
     f.write(vgm)
 
 print("donezorz")

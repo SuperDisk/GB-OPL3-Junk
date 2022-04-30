@@ -8,7 +8,7 @@
 
 int main(void) {
 
-  FILE* f = fopen("truncated.vgm", "rb");
+  FILE* f = fopen("penis.vgm", "rb");
   rewind(f);
   fseek(f, 0x34, SEEK_SET);
   unsigned int data_offset;
@@ -33,13 +33,16 @@ int main(void) {
     if (cmd == 0x66)
       break;
 
-    if ((cmd != 0x5e) && (cmd != 0x5f) && (cmd != 0x61)) {
-      /* puts("bitch you crazy!"); */
+    if ((cmd != 0x5e) && (cmd != 0x5f) && (cmd != 0x61) && (cmd != 0x63)) {
+      fprintf(stderr, "bitch you crazy! %x, %x\n", cmd, ftell(f));
       return 1;
     }
 
-    if (cmd == 0x61) {
-      fread(&wait, 2, 1, f);
+    if (cmd == 0x61 || cmd == 0x63) {
+      if (cmd == 0x63)
+        wait = 882;
+      else
+        fread(&wait, 2, 1, f);
 
       int16_t* sndptr = malloc(2 * 2 * wait); // 2 (channels) * 2 (bytes) * numsamples
       OPL3_GenerateStream(&chip, sndptr, wait);

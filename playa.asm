@@ -85,31 +85,11 @@ DS 1
 ; $0144 - $0145: "New" Licensee Code, a two character name.
 DB "NF"
 
-SECTION "cooked00", ROMX, BANK[1]
+SECTION "mooked00", ROMX, BANK[1]
 the_vgm:
-incbin "cooked00"
-SECTION "cooked01", ROMX, BANK[2]
-incbin "cooked01"
-SECTION "cooked02", ROMX, BANK[3]
-incbin "cooked02"
-SECTION "cooked03", ROMX, BANK[4]
-incbin "cooked03"
-SECTION "cooked04", ROMX, BANK[5]
-incbin "cooked04"
-SECTION "cooked05", ROMX, BANK[6]
-incbin "cooked05"
-SECTION "cooked06", ROMX, BANK[7]
-incbin "cooked06"
-SECTION "cooked07", ROMX, BANK[8]
-incbin "cooked07"
-SECTION "cooked08", ROMX, BANK[9]
-incbin "cooked08"
-SECTION "cooked09", ROMX, BANK[10]
-incbin "cooked09"
-SECTION "cooked10", ROMX, BANK[11]
-incbin "cooked10"
-SECTION "cooked11", ROMX, BANK[12]
-incbin "cooked11"
+incbin "mooked00"
+SECTION "mooked01", ROMX, BANK[2]
+incbin "mooked01"
 
 ; Initialization
 SECTION "main", ROM0[$0150]
@@ -163,6 +143,14 @@ _init:
     ld a, $77
     ld [rAUDVOL], a
 
+    ; ld a, 255 - 3 ; - 22
+    ; ldh [rTMA], a
+    ; ld a, 4
+    ; ldh [rTAC], a
+
+    ; ld a, IEF_TIMER
+    ; ld [rIE], a
+
     ld a, IEF_VBLANK
     ld [rIE], a
 
@@ -171,7 +159,7 @@ _init:
     ;; bank
     ld c, 1
 
-    ld hl, the_vgm + $C0
+    ld hl, the_vgm + $100
     ld b, 1
 _halt:
     halt
