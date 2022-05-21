@@ -9,13 +9,14 @@
         <Filename Value="pasplaya.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="22" Y="10"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="opl3.pas"/>
-        <EditorIndex Value="1"/>
+        <TopLine Value="55"/>
         <CursorPos X="107" Y="145"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>

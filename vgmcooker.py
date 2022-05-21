@@ -1,10 +1,10 @@
-with open('nikku.vgm', 'rb') as f:
+with open('output.vgm', 'rb') as f:
     vgm = bytearray(f.read())
 
 print(type(vgm))
 print(vgm[0])
 
-idx = 0x100
+idx = 0xc0
 while True:
     if idx >= len(vgm):
         break
@@ -31,7 +31,7 @@ while True:
     else:
         print("UH OH!", hex(cmd))
 
-with open('cooked2.vgm', 'wb') as f:
+with open('cooked.vgm', 'wb') as f:
     f.write(vgm)
 
 print("donezorz")

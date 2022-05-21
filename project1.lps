@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="14"/>
+        <CursorPos X="19" Y="36"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Nuked-OPL3\pasplaya.lpr"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="10"/>
+        <CursorPos X="23" Y="36"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="opl3.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="19" Y="110"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="23">
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="37" Column="30" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="29" Column="47" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="31" Column="33" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="29" Column="47"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="31" Column="33" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="7" Column="16" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="26" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="29" Column="12" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="44" Column="23" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="39" Column="5" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="56" Column="24" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="22" Column="19"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="57" Column="29" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="56" Column="36" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="57" Column="81" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="69" Column="79" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="77" Column="16" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="59" Column="11" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="55" Column="24" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="77" Column="16" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="78" Column="32" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="67" Column="73" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="69" Column="11" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="19" Column="39"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

@@ -17,7 +17,7 @@ begin
   OutS := TOutputPipeStream.Create(GetFileHandle(Output));
   //OutS := TFileStream.Create('pasout.bin', fmCreate);
 
-  S := TFileStream.Create('truncated.vgm', fmOpenRead);
+  S := TFileStream.Create('nikku.vgm', fmOpenRead);
   S.Seek($34, soBeginning);
 
   DataOffset := S.ReadQWord;

@@ -8,7 +8,7 @@
 
 int main(void) {
 
-  FILE* f = fopen("penis.vgm", "rb");
+  FILE* f = fopen("output.vgm", "rb");
   rewind(f);
   fseek(f, 0x34, SEEK_SET);
   unsigned int data_offset;

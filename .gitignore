@@ -1,0 +1,13 @@
+*.s3m
+*.vgm
+*.dll
+*.def
+*.txt
+cooked*
+*.exe
+*.obj
+backup/**
+lib/**
+*.gb
+*.map
+*.sym
